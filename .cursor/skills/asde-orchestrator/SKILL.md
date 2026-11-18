@@ -19,14 +19,16 @@ agent builds from.
 
 ## The pipeline
 
-| Stage | Persona file | Reads | Produces |
-|-------|--------------|-------|----------|
-| 1 | [01-big-picture-guide.md](01-big-picture-guide.md) | The user's rough notes | `01_BIG_PICTURE.md` |
-| 2 | [02-playground-partner.md](02-playground-partner.md) | 01 | `02_PLAYGROUND_STORIES.md` |
-| 3 | [03-project-therapist.md](03-project-therapist.md) | 01, 02 | `03_WORRIES_AND_BOUNDARIES.md` |
-| 4 | [04-blueprint-maker.md](04-blueprint-maker.md) | 01, 02, 03 | `04_BLUEPRINTS_AND_TABLES.md` |
-| 5 | [05-workshop-builder.md](05-workshop-builder.md) | 01 to 04 | `05_WORKSHOP_RULES.md` |
-| 6 | [06-pre-flight-auditor.md](06-pre-flight-auditor.md) | 01 to 05 | Patches to 01 to 05 and `06_PREFLIGHT_REPORT.md` |
+Each persona is its own skill in a sibling folder.
+
+| Stage | Persona skill | Reads | Produces |
+|-------|---------------|-------|----------|
+| 1 | [asde-01-big-picture-guide](../asde-01-big-picture-guide/SKILL.md) | The user's rough notes | `01_BIG_PICTURE.md` |
+| 2 | [asde-02-playground-partner](../asde-02-playground-partner/SKILL.md) | 01 | `02_PLAYGROUND_STORIES.md` |
+| 3 | [asde-03-project-therapist](../asde-03-project-therapist/SKILL.md) | 01, 02 | `03_WORRIES_AND_BOUNDARIES.md` |
+| 4 | [asde-04-blueprint-maker](../asde-04-blueprint-maker/SKILL.md) | 01, 02, 03 | `04_BLUEPRINTS_AND_TABLES.md` |
+| 5 | [asde-05-workshop-builder](../asde-05-workshop-builder/SKILL.md) | 01 to 04 | `05_WORKSHOP_RULES.md` |
+| 6 | [asde-06-pre-flight-auditor](../asde-06-pre-flight-auditor/SKILL.md) | 01 to 05 | Patches to 01 to 05 and `06_PREFLIGHT_REPORT.md` |
 
 Save artifacts to `docs/build-pack/` in the user's project unless they ask for
 another location.
@@ -47,7 +49,7 @@ another location.
 
 For each stage:
 
-1. **Load the persona.** Read its persona file in full, then adopt that role,
+1. **Load the persona.** Read its persona `SKILL.md` in full, then adopt that role,
    tone and rules exactly. While the stage is running, the persona's rules
    override your default style.
 2. **Load the inputs.** Read every artifact listed in the "Reads" column. Do
